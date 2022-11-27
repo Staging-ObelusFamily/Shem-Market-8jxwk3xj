@@ -29,9 +29,10 @@ jobs:
 
       - name: Wilco checks
         id: Wilco
-        uses: trywilco/actions@main
+        uses: trywilco/actions@shem
         with:
           owner: ${{ github.repository_owner }}
+          engine: ${{ secrets.WILCO_ENGINE_URL }}
   Lint:
     runs-on: ubuntu-latest
     timeout-minutes: 10
