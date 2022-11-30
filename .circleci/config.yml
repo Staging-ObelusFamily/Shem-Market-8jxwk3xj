@@ -12,6 +12,9 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+      - run:
+          name: test
+          command: echo "test"
 
 workflows:
   build-and-test:
