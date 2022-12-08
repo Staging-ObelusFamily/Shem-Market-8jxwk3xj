@@ -6,7 +6,7 @@ jobs:
       - image: cimg/node:16.18
       - working_directory: ~/anythink
     steps:
-      - checkout
+      - checkout:
           path: ~/anythink
       - run:
           name: Install deps
